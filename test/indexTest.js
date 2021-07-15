@@ -78,7 +78,7 @@ describe( "submitData()", () => {
       .replyWithError( {
         message: message,
         code: '401',
-      } )
+      })
 
     let name = "Jim"
     let email = "jim@jim.com"
@@ -86,5 +86,5 @@ describe( "submitData()", () => {
     await submitData( name, email )
     expect( document.body.innerHTML )
       .to.include( message )
-  } )
-} )
+  })
+})
